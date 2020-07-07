@@ -7,7 +7,6 @@
 }
 /* HEADER STYLE  TITLE*/
 header .title {
-  color: red;
   text-decoration-line:underline;
   margin-bottom: 15px;
 }
@@ -20,6 +19,7 @@ header .title {
   position: relative;
   text-align: center;
   margin-top: 50px;
+  background-image: url(../img/sfondo.jpg);
 }
 /* FLEX FOR OL ITEM */
 .daily_todo {
@@ -35,6 +35,7 @@ header .title {
   transform: translate(-50%, -50%);
   z-index: 9999;
   font-size: 60px;
+  color: blue;
 }
 .load.active {
   display: block;
