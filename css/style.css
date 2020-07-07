@@ -21,10 +21,16 @@ header .title {
   margin-top: 50px;
   background-image: url(../img/sfondo.jpg);
 }
+/* STYLE FOR INPUT */
+.input-list {
+  background-color: black;
+  color:white;
+}
 /* FLEX FOR OL ITEM */
 .daily_todo {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 10px;
 }
 /* LOADING ELEMENT STYLE + DISPLAY OR NOT */
 .load {
