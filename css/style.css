@@ -1,0 +1,41 @@
+/* GENERAL RULES */
+* {
+  margin: auto 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bangers', cursive;
+}
+/* HEADER STYLE  TITLE*/
+header .title {
+  color: red;
+  text-decoration-line:underline;
+  margin-bottom: 15px;
+}
+/* WRAPPER STYLE */
+.wrap {
+  width: 40%;
+  margin: 0 auto;
+  border: 3px dashed black;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+}
+/* FLEX FOR OL ITEM */
+.daily_todo {
+  display: flex;
+  justify-content: space-between;
+}
+/* LOADING ELEMENT STYLE + DISPLAY OR NOT */
+.load {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  font-size: 60px;
+}
+.load.active {
+  display: block;
+}

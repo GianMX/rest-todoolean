@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <!-- JQUERY 3.4.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- HANDLEBARS 4.7.6 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js"></script>
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <!-- MY CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Todolist with API</title>
+  </head>
+  <body>
+    <!-- WRAPPER -->
+    <div class="wrap">
+      <!-- HEADER -->
+      <header>
+        <h2 class="title">Che programmi abbiamo oggi?</h2>
+        <input class="input-list" type="text" name="" value="" placeholder=" Scrivi qui!">
+        <button class="botton-list" type="button" name="button">Add!</button>
+      </header>
+        <!-- LI ITEM FOR LOADING -->
+        <li class="load"><i><i class="fas fa-circle-notch fa-spin"></i></i></li>
+        <!-- ORDER LIST FOR NEW TO-DO ELEMENTS -->
+        <ol class="list"></ol>
+    </div>
+    <!-- HANDLEBARS SCRIPT -->
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="daily_todo">
+        <li class= "list-element" data-id="{{id}}">{{body}}</li>
+        <span class="delete-list-element"><i class="far fa-trash-alt"></i></span>
+      </div>
+    </script>
+    <!-- MY SCRIPT -->
+    <script src="js/myjs.js" charset="utf-8"></script>
+  </body>
+</html>
